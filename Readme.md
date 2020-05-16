@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Алексей Боровиков](https://up.htmlacademy.ru/htmlcss/28/user/1401619).
-* Наставник: `Constantine Cher`(https://htmlacademy.ru/profile/ccher).
+* Наставник: [Constantine Cher](https://htmlacademy.ru/profile/ccher).
 
 ---
 
