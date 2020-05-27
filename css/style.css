@@ -1,0 +1,54 @@
+/* basic colors. aim-on-состояние нажатия */
+:root {
+  --basic-white: #F2F2F2;
+  --basic-header: #EEEEEE;
+  --button-pease: #FB565A;
+  --button-aim-on: #E74246;
+  --button-push: #D7373B;
+  --button-green-pease: #00CA74;
+  --button-green-aim-on: #00BC6C;
+  --button-green-push: #00AA62; 
+  --button-yellow-pease: #EFC84A;
+  --button-yellow-aim-on: #EAB534;
+  --button-yellow-push: #E5A722;
+  --link-aim-on: #EAB534;
+  --social-network-icon: #FFFFFF;
+  --usualtext-color:#283136;
+  --bigtext-color:#000000;
+  --button-catalog-aim-on: #DFDFDF;
+  --button-push: #D5D5D5;
+  
+}
+
+body{
+    min-width: 960px;
+	font-family: "PT Sans Narrow", sans-serif;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: var(--usualtext-color);
+	background-color: var(--basic-white: #F2F2F2);
+}
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+ul{
+list-style: none;
+}
+
+.main-header {
+	background-color: var(--basic-header);
+}
+
+.main-navigation {
+	font-size: 16px;
+	
+}
+
+.main-navigation-wrapper {
+	color: var(--bigtext-color);
+}
