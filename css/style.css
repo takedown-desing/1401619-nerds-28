@@ -52,3 +52,78 @@ list-style: none;
 .main-navigation-wrapper {
 	color: var(--bigtext-color);
 }
+
+/* header */
+.link-menu a{
+	background-color: var(--bigtext-color);
+}
+
+.link-navigation a:hover,
+.link-navigation a:focus {
+	background-color: var(--bigtext-color);
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+/* features */
+.features {
+	text-align: center;
+	color: var(--usualtext-color);
+}
+.features-h3 {
+	font-size: 24px;
+	color: var(--bigtext-color);
+}
+
+/*all button */
+.button-red {
+	font-size: inherit;
+	text-align: center;
+	color: var(--social-network-icon);
+	background-color: var(--button-pease);
+	border:none;
+}
+.button-red:hover,
+.button-red:focus {
+	background-color: var(--button-aim-on);
+}
+
+.button-red:active {
+	background-color: var(--button-push);
+}
+
+.button-green {
+	font-size: inherit;
+	text-align: center;
+	color: var(--social-network-icon);
+	background-color: var(--button-green-pease);
+	border:none;
+}
+.button-green:hover,
+.button-green:focus {
+	background-color: var(--button-green-aim-on);
+}
+
+.button-green:active {
+	background-color: var(--button-green-push);
+}
+.button-yellow {
+	font-size: inherit;
+	text-align: center;
+	color: var(--social-network-icon);
+	background-color: var(--button-yellow-pease);
+	border:none;
+}
+.button-yellow:hover,
+.button-yellow:focus {
+	background-color: var(--button-yellow-aim-on);
+}
+
+.button-yellow:active {
+	background-color: var(--button-yellow-push);
+}
