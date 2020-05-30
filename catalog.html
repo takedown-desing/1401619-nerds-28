@@ -3,174 +3,185 @@
 <head>
 <meta charset="UTF-8">
 <title>Нёрдс каталог</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link href="normalize.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<header>
-<nav>
+<header class="main-header">
+<nav class="main-navigation">
+<div class="link-menu">
 <a href="index.html"><img src="img/nerds-logo.svg" width="160" height="65" alt="logo"></a> <!--логотип-->
-<ul >
-	<li><a href="">СТУДИЯ</a></li>
-	<li><a href="">КЛИЕНТЫ</a></li>
-	<li><a href="catalog.html">МАГАЗИН</a></li>
-	<li><a href="">КОНТАКТЫ</a></li>
+<div class="main-navigation-wrapper">
+<ul class="link-navigation">
+<li><a href="">СТУДИЯ</a></li>
+<li><a href="">КЛИЕНТЫ</a></li>
+<li><a href="catalog.html">МАГАЗИН</a></li>
+<li><a href="">КОНТАКТЫ</a></li>
 </ul>
 <figure>
-	<img src="img/cart-icon.svg" width="15" height="15" alt="корзина"> <!--иконка корзины -->
+<img src="img/cart-icon.svg" width="15" height="15" alt="корзина"> <!--иконка корзины -->
 </figure>
 <a href="">КОРЗИНА</a>
+</div>
 </nav>
+</div>
 </header>
 <main>
 <article>
 <h1>Магазин готовых шаблонов</h1>
 <aside>
-	<h2>Фильтры</h2>
-	<form>
-		<p>СОРТИРОВАТЬ:</p>
-		<ul>
-			<li>ПО ЦЕНЕ</li>
-			<li>ПО ТИПУ</li>
-			<li>ПО НАЗВАНИЮ</li>
-		</ul>
-		<figure>
-			<button>
-			<img src="img/icon-down-dir.svg">
-			</button>
-			<button>
-			<img src="img/icon-up-dir.svg">
-			</button>
-		</figure>
-	</form>
-	<form action="https://echo.htmlacademy.ru" method="get" oninput="numbermax.value=numbermin.value">
-		<fieldset>
-			<legend>СТОИМОСТЬ:</legend>
-			<label for="cost"></label>
-			<input id="cost" type="range" name="numbermin">
-			ОТ<input type="text" >ДО<input type="text" ><!--<output name="numbermax"></output>-->
-		</fieldset>
-		<fieldset>
-			<legend>СЕТКА:</legend>
-			<label><!--<img src="img/radio-on.svg">-->Адаптивная<input type="radio" name="setka" value="adapt" checked></label>
-			<label><!--<img src="img/radio-off.svg">-->Фиксированная<input type="radio" name="setka" value="fix"></label>
-			<label><!--<img src="img/radio-off.svg">-->Резиновая<input type="radio" name="setka" value="tyres"></label>
-		</fieldset>
-		<fieldset>
-			<legend>ОСОБЕННОСТИ:</legend>
-			<label><!--<img src="img/checkbox-on.svg">-->Слайдер<input type="checkbox" checked></label>
-			<label><!--<img src="img/checkbox-off.svg">-->Блок преимуществ<input type="checkbox"></label>
-			<label><!--<img src="img/checkbox-on.svg">-->Новости<input type="checkbox" checked></label>
-			<label><!--<img src="img/checkbox-off.svg">-->Галерея<input type="checkbox"></label>
-			<label><!--<img src="img/checkbox-off.svg">-->Корзина<input type="checkbox"></label>
-		</fieldset>
-		<button type = "submit">ПОКАЗАТЬ</button>
-	</form>
-</aside>
-<section>
-	<div>
-		<h3>SEDONA</h3>
-		<figure>
-			<img src="img/browser.svg" width="360" height="40" alt="browser">
-			<img src="img/sedona.jpg" width="360" height="576" alt="sedona">
-		</figure>
-		<p>Информационный сайт для туристов</p>
-		<button type = "button">9 900 Р</button>
-	</div>
-	<div>
-		<h3>PINK</h3>
-		<figure>
-			<img src="img/browser.svg" width="360" height="40" alt="browser">
-			<img src="img/pink.jpg" width="360" height="576" alt="pink">
-		</figure>
-		<p>Приложение</p>
-		<button type = "button">100500 Р</button>
-	</div>
-	<div>
-		<h3>BORODINSKI</h3>
-		<figure>
-			<img src="img/browser.svg" width="360" height="40" alt="browser">
-			<img src="img/borodinski.jpg" width="360" height="576" alt="borodinski">
-		</figure>
-		<p>Барбершоп</p>
-		<button type = "button">100500 Р</button>
-	</div>
-	<div>
-		<h3>MISHKA</h3>
-		<figure>
-			<img src="img/browser.svg" width="360" height="40" alt="browser">
-			<img src="img/mishka.jpg" width="360" height="576" alt="mishka">
-		</figure>
-		<p>Всякие милые штучки</p>
-		<button type = "button">100500 Р</button>
-	</div>
-	<div>
-		<h3>A+</h3>
-		<figure>
-			<img src="img/browser.svg" width="360" height="40" alt="browser">
-			<img src="img/aplus.jpg" width="360" height="576" alt="aplus">
-		</figure>
-		<p>Тут про учёбу</p>
-		<button type = "button">100500 Р</button>
-	</div>
-	<div>
-		<h3>КВАСТ</h3>
-		<figure>
-			<img src="img/browser.svg" width="360" height="40" alt="browser">
-			<img src="img/kvast.jpg" width="360" height="576" alt="kvast">
-		</figure>
-		<p>Крафтовый квас</p>
-		<button type = "button">100500 Р</button>
-	</div>
+<h2 class="visually-hidden">Фильтры</h2>
+<form>
+	<p>СОРТИРОВАТЬ:</p>
 	<ul>
-		<li>
-			<a href="#">1</a>
-		</li>
-		<li>
-			<a href="#">2</a>
-		</li>
-		<li>
-			<a href="#">3</a>
-		</li>
-		<li>
-			<a href="#"><button>СЛЕДУЮЩАЯ</button></a>
-		</li>
+		<li>ПО ЦЕНЕ</li>
+		<li>ПО ТИПУ</li>
+		<li>ПО НАЗВАНИЮ</li>
 	</ul>
 	<figure>
-		<img src="img/map1.jpg" width="1400" height="416" alt="карта">
-		<img src="img/map-marker1.png" width="231" height="190" alt="указатель">
+		<button>
+		<img src="img/icon-down-dir.svg">
+		</button>
+		<button>
+		<img src="img/icon-up-dir.svg">
+		</button>
 	</figure>
+</form>
+<form action="https://echo.htmlacademy.ru" method="get" oninput="numbermax.value=numbermin.value">
+	<fieldset>
+		<legend>СТОИМОСТЬ:</legend>
+		<label for="cost"></label>
+		<input id="cost" type="range" name="numbermin">
+		ОТ<input type="text" >ДО<input type="text" ><!--<output name="numbermax"></output>-->
+	</fieldset>
+	<fieldset>
+		<legend>СЕТКА:</legend>
+		<label><!--<img src="img/radio-on.svg">-->Адаптивная<input type="radio" name="setka" value="adapt" checked></label>
+		<label><!--<img src="img/radio-off.svg">-->Фиксированная<input type="radio" name="setka" value="fix"></label>
+		<label><!--<img src="img/radio-off.svg">-->Резиновая<input type="radio" name="setka" value="tyres"></label>
+	</fieldset>
+	<fieldset>
+		<legend>ОСОБЕННОСТИ:</legend>
+		<label><!--<img src="img/checkbox-on.svg">-->Слайдер<input type="checkbox" checked></label>
+		<label><!--<img src="img/checkbox-off.svg">-->Блок преимуществ<input type="checkbox"></label>
+		<label><!--<img src="img/checkbox-on.svg">-->Новости<input type="checkbox" checked></label>
+		<label><!--<img src="img/checkbox-off.svg">-->Галерея<input type="checkbox"></label>
+		<label><!--<img src="img/checkbox-off.svg">-->Корзина<input type="checkbox"></label>
+	</fieldset>
+	<button class="button-filter" type = "submit">ПОКАЗАТЬ</button>
+</form>
+</aside>
+<section>
+<div>
+	<h3>SEDONA</h3>
+	<figure>
+		<img src="img/browser.svg" width="360" height="40" alt="browser">
+		<img src="img/sedona.jpg" width="360" height="576" alt="sedona">
+	</figure>
+	<p>Информационный сайт для туристов</p>
+	<button class="button-red" type = "button">9 900 Р</button>
+</div>
+<div>
+	<h3>PINK</h3>
+	<figure>
+		<img src="img/browser.svg" width="360" height="40" alt="browser">
+		<img src="img/pink.jpg" width="360" height="576" alt="pink">
+	</figure>
+	<p>Приложение</p>
+	<button class="button-red" type = "button">100500 Р</button>
+</div>
+<div>
+	<h3>BORODINSKI</h3>
+	<figure>
+		<img src="img/browser.svg" width="360" height="40" alt="browser">
+		<img src="img/borodinski.jpg" width="360" height="576" alt="borodinski">
+	</figure>
+	<p>Барбершоп</p>
+	<button class="button-red" type = "button">100500 Р</button>
+</div>
+<div>
+	<h3>MISHKA</h3>
+	<figure>
+		<img src="img/browser.svg" width="360" height="40" alt="browser">
+		<img src="img/mishka.jpg" width="360" height="576" alt="mishka">
+	</figure>
+	<p>Всякие милые штучки</p>
+	<button class="button-red" type = "button">100500 Р</button>
+</div>
+<div>
+	<h3>A+</h3>
+	<figure>
+		<img src="img/browser.svg" width="360" height="40" alt="browser">
+		<img src="img/aplus.jpg" width="360" height="576" alt="aplus">
+	</figure>
+	<p>Тут про учёбу</p>
+	<button class="button-red" type = "button">100500 Р</button>
+</div>
+<div>
+	<h3>КВАСТ</h3>
+	<figure>
+		<img src="img/browser.svg" width="360" height="40" alt="browser">
+		<img src="img/kvast.jpg" width="360" height="576" alt="kvast">
+	</figure>
+	<p>Крафтовый квас</p>
+	<button class="button-red" type = "button">100500 Р</button>
+</div>
+<dir class="button-filter">
+<ul>
+	<li>
+		<button><a href="#">1</a></button>
+	</li>
+	<li>
+		<button><a href="#">2</a></button>
+	</li>
+	<li>
+		<button><a href="#">3</a></button>
+	</li>
+	<li>
+		<button><a href="#">СЛЕДУЮЩАЯ</a></button>
+	</li>
+</ul>
+</dir>
+<figure>
+	<img src="img/map1.jpg" width="1400" height="416" alt="карта">
+	<img src="img/map-marker1.png" width="231" height="190" alt="указатель">
+</figure>
 </section>
 </article>
-<section>
+<section class="popup">
 <h2>Напишите нам</h2>
 <div>
-	<img src="img/close-cross.svg">
+<img src="img/close-cross.svg">
 </div>
 <form action="https://echo.htmlacademy.ru" method="post">
-	<p>
-		<label for="fio">Ваше имя:</label>
-		<input type="text" name="username" id="fio" placeholder="Имя Фамилия">
-	</p>
-	<p>
-		<label for="yuoremail">Ваш e-mail:</label>
-		<input type="e-mail" name="email" placeholder="email@example.com">
-	</p>
-	<p>
-		<label id="textletter">Текст письма</label>
-		<textarea id="textletter" rows="5" placeholder="В свободной форме"></textarea>
-	</p>
-	<button type="submit">ОТПРАВИТЬ</button>
+<p>
+	<label for="fio">Ваше имя:</label>
+	<input type="text" name="username" id="fio" placeholder="Имя Фамилия">
+</p>
+<p>
+	<label for="yuoremail">Ваш e-mail:</label>
+	<input type="e-mail" name="email" placeholder="email@example.com">
+</p>
+<p>
+	<label id="textletter">Текст письма</label>
+	<textarea id="textletter" rows="5" placeholder="В свободной форме"></textarea>
+</p>
+<button class="button-red" type="submit">ОТПРАВИТЬ</button>
 </form>
 </section>
 </main>
 <footer>
 <section>
-<figure>
-	<a href="https://vk.com/"><img src="img/vkicon.svg" width="81" height="81" alt="vkicon"></a> <!--иконки соц сетей -->
-	<a href="https://www.facebook.com/"><img src="img/fbicon.svg" width="81" height="81" alt="fbicon"></a>
-	<a href="https://www.instagram.com/"><img src="img/instaicon.svg" width="81" height="81" alt="instaicon"></a>
+<div class="footer-icon">
+<figure class="footer-icon"><!--иконки соц сетей -->
+<a href="https://vk.com/"><input type="image" src="img/vkicon.svg" width="81" height="81" alt="vkicon" ></a> 
+<a href="https://www.facebook.com/"><input type="image" src="img/fbicon.svg" width="81" height="81" alt="fbicon"></a>
+<a href="https://www.instagram.com/"><input type="image" src="img/instaicon.svg" width="81" height="81" alt="instaicon"></a>
 </figure>
-<h3>Наши предложения</h3>
-<p>Давайте дружить, это выгодно!</p>
+</div>
+<h3 class="visually-hidden">Наши предложения</h3>
+<p class="footer-text">Давайте дружить, это выгодно!</p>
 <p>Скидка 10% для друзей из социальных сетей.</p>
 </section>
 </footer>

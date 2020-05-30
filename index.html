@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <title>Нёрдс - главная</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 <link href="normalize.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<header clas="main-header">
+<header class="main-header">
 <nav class="main-navigation">
 <div class="link-menu">	
 <a href="index.html"><img src="img/nerds-logo.svg" width="160" height="65" alt="logo"></a> <!--логотип-->
@@ -78,8 +78,8 @@
 </section>
 </article>
 <article>
-<p>Мы - маленькая, но гордая<br>дизайн-студия из Краснодара.</p>
-<section>
+<section class="features">
+	<p class="big-text">Мы - маленькая, но гордая<br>дизайн-студия из Краснодара.</p>
 	<h2 class="visually-hidden">Принципы работы</h2>
 	<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br> превыше креатива. Работаем не покладая рук, как роботы.</p>
 	<p>ВПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</p>
@@ -95,7 +95,7 @@
 		<img src="img/nerds-illustration1.jpg" width="300" height="208" alt="mimi_logo"> <!--мини логотип-->
 	</figure>
 	<p>С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</p>
-	<ul>
+	<ul class="big-text">
 		<li>146% Уровень самоотдачи</li>
 		<li>100% Соблюдение сроков</li>
 		<li>50% Минимальная предоплата</li>
@@ -115,7 +115,7 @@
 	</figure>
 </section>
 </article>
-<section>
+<section class="popup">
 <h2>Напишите нам</h2>
 <figure>
 	<img src="img/close-cross.svg">
@@ -146,13 +146,15 @@
 <footer>
 <section>
 <h3 class="visually-hidden">Наши предложения</h3>
-<p>Давайте дружить, это выгодно!</p>
+<p  class="footer-text">Давайте дружить, это выгодно!</p>
 <p>Скидка 10% для друзей из социальных сетей.</p>
-<figure>
-	<a href="https://vk.com/"><img src="img/vkicon.svg" width="81" height="81" alt="vkicon"></a> <!--иконки соц сетей -->
-	<a href="https://www.facebook.com/"><img src="img/fbicon.svg" width="81" height="81" alt="fbicon"></a>
-	<a href="https://www.instagram.com/"><img src="img/instaicon.svg" width="81" height="81" alt="instaicon"></a>
+<div class="footer-icon">
+<figure class="footer-icon"><!--иконки соц сетей -->
+	<a href="https://vk.com/"><input type="image" src="img/vkicon.svg" width="81" height="81" alt="vkicon" ></a> 
+	<a href="https://www.facebook.com/"><input type="image" src="img/fbicon.svg" width="81" height="81" alt="fbicon"></a>
+	<a href="https://www.instagram.com/"><input type="image" src="img/instaicon.svg" width="81" height="81" alt="instaicon"></a>
 </figure>
+</div>
 </section>
 </footer>
 </body>

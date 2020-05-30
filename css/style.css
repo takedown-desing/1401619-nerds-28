@@ -22,7 +22,7 @@
 
 body{
     min-width: 960px;
-	font-family: "PT Sans Narrow", sans-serif;
+	font-family: "Roboto", sans-serif;
 	font-size: 16px;
 	text-transform: uppercase;
 	color: var(--usualtext-color);
@@ -41,7 +41,7 @@ list-style: none;
 }
 
 .main-header {
-	background-color: var(--basic-header);
+	background: var(--basic-header);
 }
 
 .main-navigation {
@@ -77,6 +77,10 @@ list-style: none;
 }
 .features-h3 {
 	font-size: 24px;
+	color: var(--bigtext-color);
+}
+.big-text {
+	font-size: 45px;
 	color: var(--bigtext-color);
 }
 
@@ -126,4 +130,46 @@ list-style: none;
 
 .button-yellow:active {
 	background-color: var(--button-yellow-push);
+}
+
+.button-filter {
+	font-size: inherit;
+	text-align: center;
+	color: var(--bigtext-color);
+	background-color: var(--basic-header);
+	border:none;
+}
+
+.button-filter:hover,
+.button-filter:focus {
+	background-color: var(--button-catalog-aim-on);
+}
+
+.button-filter:active {
+	background-color: var(--button-push);
+}
+
+.popup input {
+  font: inherit;
+  
+}
+
+.popup input:focus {
+  font: inherit;
+  border: 2px solid var(--basic-black);
+}
+
+/*footer*/
+
+.footer-text {
+	font-size: 36px;
+	color: var(--bigtext-color);
+}
+
+.footer-icon:hover,
+.footer-icon:focus
+{
+border:none;	
+color: var(--basic-white);
+background-color: var(--social-network-icon);
 }
