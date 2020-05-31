@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Нёрдс каталог</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<!--<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">-->
 <link href="normalize.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
 </head>
@@ -24,8 +24,8 @@
 </figure>
 <a href="">КОРЗИНА</a>
 </div>
-</nav>
 </div>
+</nav>
 </header>
 <main>
 <article>
@@ -41,10 +41,10 @@
 	</ul>
 	<figure>
 		<button>
-		<img src="img/icon-down-dir.svg">
+		<img src="img/icon-down-dir.svg" alt="сортировка по убыванию">
 		</button>
 		<button>
-		<img src="img/icon-up-dir.svg">
+		<img src="img/icon-up-dir.svg" alt="сортировка по возрастанию">
 		</button>
 	</figure>
 </form>
@@ -127,22 +127,20 @@
 	<p>Крафтовый квас</p>
 	<button class="button-red" type = "button">100500 Р</button>
 </div>
-<dir class="button-filter">
-<ul>
+<ul class="button-filter">
 	<li>
-		<button><a href="#">1</a></button>
+		<a href="#">1</a>
 	</li>
 	<li>
-		<button><a href="#">2</a></button>
+		<a href="#">2</a>
 	</li>
 	<li>
-		<button><a href="#">3</a></button>
+		<a href="#">3</a>
 	</li>
 	<li>
-		<button><a href="#">СЛЕДУЮЩАЯ</a></button>
+		<a href="#">СЛЕДУЮЩАЯ</a>
 	</li>
 </ul>
-</dir>
 <figure>
 	<img src="img/map1.jpg" width="1400" height="416" alt="карта">
 	<img src="img/map-marker1.png" width="231" height="190" alt="указатель">
@@ -152,7 +150,7 @@
 <section class="popup">
 <h2>Напишите нам</h2>
 <div>
-<img src="img/close-cross.svg">
+<img src="img/close-cross.svg" alt="close">
 </div>
 <form action="https://echo.htmlacademy.ru" method="post">
 <p>
@@ -161,10 +159,10 @@
 </p>
 <p>
 	<label for="yuoremail">Ваш e-mail:</label>
-	<input type="e-mail" name="email" placeholder="email@example.com">
+	<input type="email" id="yuoremail" name="email" placeholder="email@example.com">
 </p>
 <p>
-	<label id="textletter">Текст письма</label>
+	<label for="textletter">Текст письма</label>
 	<textarea id="textletter" rows="5" placeholder="В свободной форме"></textarea>
 </p>
 <button class="button-red" type="submit">ОТПРАВИТЬ</button>
@@ -175,9 +173,9 @@
 <section>
 <div class="footer-icon">
 <figure class="footer-icon"><!--иконки соц сетей -->
-<a href="https://vk.com/"><input type="image" src="img/vkicon.svg" width="81" height="81" alt="vkicon" ></a> 
-<a href="https://www.facebook.com/"><input type="image" src="img/fbicon.svg" width="81" height="81" alt="fbicon"></a>
-<a href="https://www.instagram.com/"><input type="image" src="img/instaicon.svg" width="81" height="81" alt="instaicon"></a>
+	<a href="https://vk.com/"><img src="img/vkicon.svg" width="81" height="81" alt="vkicon" ></a> 
+	<a href="https://www.facebook.com/"><img src="img/fbicon.svg" width="81" height="81" alt="fbicon"></a>
+	<a href="https://www.instagram.com/"><img src="img/instaicon.svg" width="81" height="81" alt="instaicon"></a>
 </figure>
 </div>
 <h3 class="visually-hidden">Наши предложения</h3>

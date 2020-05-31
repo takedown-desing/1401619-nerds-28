@@ -20,6 +20,29 @@
   
 }
 
+/* roboto-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v20-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+  src: local('Roboto'), local('Roboto-Regular'),
+       url('../fonts/roboto-v20-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/roboto-v20-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+       
+}
+/* roboto-700 - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v20-latin_cyrillic-700.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Bold'), local('Roboto-Bold'),
+       url('../fonts/roboto-v20-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/roboto-v20-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
+       
+}
+
 body{
     min-width: 960px;
 	font-family: "Roboto", sans-serif;
@@ -55,12 +78,12 @@ list-style: none;
 
 /* header */
 .link-menu a{
-	background-color: var(--bigtext-color);
+	color: var(--bigtext-color);
 }
 
 .link-navigation a:hover,
 .link-navigation a:focus {
-	background-color: var(--bigtext-color);
+	color: var(--button-pease);
 }
 .visually-hidden {
   position: absolute;
