@@ -42,14 +42,21 @@
        url('../fonts/roboto-v20-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
        
 }
+* {
+	/*display: grid;
+	grid-template-rows: min-content min-content min-content;
+	align-items: start;*/
+}
 
 body{
     min-width: 960px;
+    margin: 0 auto;
 	font-family: "Roboto", sans-serif;
 	font-size: 16px;
 	text-transform: uppercase;
 	color: var(--usualtext-color);
 	background-color: var(--basic-white: #F2F2F2);
+	
 }
 a {
   text-decoration: none;
@@ -62,21 +69,22 @@ img {
 ul{
 list-style: none;
 }
-
+/* header */
 .main-header {
 	background: var(--basic-header);
 }
 
 .main-navigation {
 	font-size: 16px;
+
 	
 }
 
 .main-navigation-wrapper {
 	color: var(--bigtext-color);
+
 }
 
-/* header */
 .link-menu a{
 	color: var(--bigtext-color);
 }
@@ -98,6 +106,14 @@ list-style: none;
 	text-align: center;
 	color: var(--usualtext-color);
 }
+
+.features-list {
+display: flex;
+flex-direction: row;
+justify-content: center;
+
+}
+
 .features-h3 {
 	font-size: 24px;
 	color: var(--bigtext-color);
@@ -105,6 +121,12 @@ list-style: none;
 .big-text {
 	font-size: 45px;
 	color: var(--bigtext-color);
+}
+.banner-navigation 
+{
+	display: flex;
+flex-direction: row;
+justify-content: center;
 }
 
 /*all button */
