@@ -105,13 +105,34 @@ list-style: none;
 .features {
 	text-align: center;
 	color: var(--usualtext-color);
+	display: flex;
+flex-direction: row;
+justify-content: center;
 }
 
 .features-list {
 display: flex;
-flex-direction: row;
-justify-content: center;
+flex-direction: column;
 
+}
+.features-about {
+display: flex;
+flex-direction: row-reverse;
+align-items: flex-start;
+
+}
+
+.client {
+	text-align: center;
+	width: 1085px;
+	height: 90px;
+	margin: auto;
+}
+
+.map {
+	width: 1440px;
+	height: 416px;
+	margin: auto;
 }
 
 .features-h3 {
@@ -122,11 +143,18 @@ justify-content: center;
 	font-size: 45px;
 	color: var(--bigtext-color);
 }
-.banner-navigation 
+.banner-position 
 {
 	display: flex;
-flex-direction: row;
-justify-content: center;
+flex-direction: column;
+justify-content: space-between;
+flex-wrap: wrap;
+
+}
+
+.banner-content {
+align-self: flex-start;
+
 }
 
 /*all button */
