@@ -72,20 +72,14 @@ list-style: none;
 /* header */
 .main-header {
 	background: var(--basic-header);
-    /*display: grid;*/
-    
     margin-left: auto;
     margin-right: auto;
-    /*gap: 20px;
-    grid-template-columns: auto auto auto;*/
-    
+        
 }
 
 .main-navigation {
 	font-size: 16px;
-	/*grid-column-start: 1;
-  grid-column-end: 4;*/
-  display: flex;
+	display: flex;
 
 	
 }
@@ -108,11 +102,6 @@ list-style: none;
 .link-navigation a
 {
  	margin: 21px;
- 	
-	/*display: flex;
-	justify-content: space-around;
-	align-items: center;
-	flex-wrap: wrap;*/
 }
 .link-navigation {
 	align-self: center;
@@ -170,14 +159,14 @@ flex-direction: column;
 flex-wrap: wrap;
 
 }
-.big-text li {
+.big-text li {/*тут я пытался разместить проценты в ряд*/
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
 }
 
 
-.features-advantages {
+.features-advantages { 
 	grid-row-start:2;
 	grid-column-start:4;
 
@@ -187,11 +176,7 @@ flex-wrap: wrap;
 	font-size: 16px;
 }
 
-
-
-
-
-.client {
+.client { /*тут должна быть полоска как в макете но почему то не получилось выставить*/
 	text-align: center;
 	width: 1085px;
 	height: 90px;
@@ -216,7 +201,7 @@ flex-wrap: wrap;
 	color: var(--bigtext-color);
 }
 
-/*banner*/
+/*banner*/  /*вот тут не получилось выставить баннер с тестом */
 .banner-position 
 {
 display: flex;
@@ -311,23 +296,12 @@ display: grid;
 	background-color: var(--button-push);
 }
 
-.popup input {
-  font: inherit;
-  
-}
-
-.popup input:focus {
-  font: inherit;
-  border: 2px solid var(--basic-black);
-}
-
 /*footer*/
 
 .footer-text {
 	font-size: 36px;
 	color: var(--bigtext-color);
-	grid-column-start: 1;
-grid-column-end: 4;
+	
 }
 
 .footer-icon:hover,
@@ -340,12 +314,123 @@ background-color: var(--social-network-icon);
 .footer-content{
 width: auto;
 margin: 0 auto;
-display: grid;
-gap:20px;
-grid-template-columns: 180px 180px 180px 660px;
-grid-template-rows: auto;
+display: flex;
+align-items: center;
+justify-content: center;
 }
-.footer-icon {
 
+/*фильтр с ползунком*/
 
+.filter-item {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.range-filter {
+  width: 260px;
+  margin-top: 49px;
+}
+
+.filter-item legend {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.range-controls {
+  position: relative;
+  height: 41px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-controls label {
+  text-transform: uppercase;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+}
+
+.price-controls input {
+  width: 60px;
+  padding: 10px;
+  margin-left: 10px;
+  text-align: center;
+  color: #283136;
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/*форма на главной странице(которая большая, поверх карты)*/
+
+.popup {
+	width: 960px;
+	height: 590px;
+	margin: 0 auto;
+}
+
+.popup input {
+  font: inherit;
+  
+}
+
+.popup input:focus {
+  font: inherit;
+  border: 2px solid var(--basic-black);
+}
+
+.appointment-form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.appointment-item label {
+  display: block;
+  width: 360px;
 }
