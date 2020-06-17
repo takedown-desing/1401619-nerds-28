@@ -192,6 +192,11 @@ flex-wrap: wrap;
 	margin: auto;
 }
 
+.map-marker {
+	position: relative;
+	z-index: 1;
+}
+
 .features-h3 {
 	font-size: 24px;
 	color: var(--bigtext-color);
@@ -206,13 +211,42 @@ flex-wrap: wrap;
 {
 display: flex;
 background: var(--basic-header);
-
+width: 1200px;
+margin: 0 auto;
 }
 
 .banner-content {
-margin: 0 auto;
+
 align-items: center;
 }
+.bannerh3 {
+	font-size: 55px;
+    margin-left: 26px;
+    margin-top: 70px;
+    text-transform: none;
+    font-weight: 500;
+}
+
+.banner-text {
+	text-transform: none;
+    margin-left: 23px;
+    margin-top: -43px;
+    line-height: 24px;
+}
+
+.banner-image {
+    margin-right: 0px;
+    margin-top: -277px;
+    margin-left: 421px;
+}
+
+.button-banner {
+margin-top: -182px;
+margin-left: 23px;
+
+}
+
+    
 
 /*page catalog */
 .content-catalog {
@@ -412,6 +446,9 @@ justify-content: center;
 	width: 960px;
 	height: 590px;
 	margin: 0 auto;
+	display: block;
+	position: relative;
+	z-index: 1;
 }
 
 .popup input {
@@ -433,4 +470,16 @@ justify-content: center;
 .appointment-item label {
   display: block;
   width: 360px;
+}
+.popup-close {
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  padding: 0;
+
+  background-color: transparent;
+  background-image: url("img/close-cross.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  cursor: pointer;
 }

@@ -22,15 +22,16 @@
 		<main>
 			<article>
 				<h1 class="visually-hidden">Нёрдс-лучшая дизайн студия</h1>
+				<!--Баннер -->
 				<section class="banner-position">
 					<div class="banner-content">
-						<h3>Долго, дорого, скрупулезно.</h3>
-						<p>Математический выверенный дизайн<br> для вашего сайта или мобильного приложения</p>
-						<figure>
+						<h3 class="bannerh3">Долго, дорого,<br> скрупулезно.</h3>
+						<p class="banner-text" >Математически выверенный дизайн<br> для вашего сайта или мобильного приложения</p>
+						<figure class="banner-image">
 							<img src="img/generalbanner.png" width="760" height="431" alt="баннер телефонами"> <!--это баннер1 -->
 							<img width="88" height="18" src="img/group7.svg">
 						</figure>
-						<button type = "button" class="button-red">УЗНАТЬ БОЛЬШЕ</button>
+						<button type = "button" class="button-red button-banner">УЗНАТЬ БОЛЬШЕ</button>
 					</div>
 					<div class="visually-hidden">
 						<h3>Любим математику как никто другой</h3>
@@ -47,6 +48,7 @@
 							<img src="img/group6.svg" width="88" height="18" alt="ползунок прокрутка">
 						</figure>
 					</div>
+					<!--Баннер закончился -->
 				</section>
 				<section class="features">
 					<h2 class="visually-hidden">Виды работ</h2>
@@ -112,17 +114,15 @@
 						<img src="img/group4.svg" width="173" height="84" alt="клиент mishka" >
 					</figure>
 					<figure class="map">
-						<img src="img/map1.jpg" width="1400" height="416" alt="карта">
-						<img src="img/map-marker1.png" width="231" height="190" alt="указатель">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1592141172349!5m2!1sen!2sru" width="1400" height="416" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+						<img class="map-marker" src="img/map-marker1.png" width="231" height="190" alt="указатель">
 					</figure>
 				</section>
 			</article>
-			<section class="popup">
+			<section class="popup feedback">
 				<h2>Напишите нам</h2>
-				<figure>
-					<img src="img/close-cross.svg" alt="close">
-				</figure>
 				<form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+					<div class="feedback-container">
 					<p class="appointment-item">
 						<label for="fio">Ваше имя:</label>
 						<input type="text" name="username" id="fio" placeholder="Имя Фамилия">
@@ -135,8 +135,12 @@
 						<label for="textletter">Текст письма</label>
 						<textarea id="textletter" rows="5" placeholder="В свободной форме"></textarea>
 					</p>
+				    </div>
+				    <div class="button-container">
 					<button class="button-red" type="submit">ОТПРАВИТЬ</button>
+					</div>
 				</form>
+				<button class="popup-close" type="button" aria-label="Закрыть"></button>
 			</section>
 			<div>
 				<h3>NERDS DESING STUDIO</h3>
