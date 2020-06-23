@@ -129,6 +129,18 @@ content: "";
   margin: -1px;
 }
 
+.h1 {
+	padding-bottom: 52px;
+	margin-top: 20px;
+	margin-left: -35px;
+    
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 3;
+    text-align: center;
+	color: var(--bigtext-color);
+}
+
 /* работы начались */
 .features {
 	text-align: left;
@@ -156,7 +168,7 @@ flex-wrap: wrap;
 	margin-left: 23px;
 }
 
-/*<!--о нашей компании -->*/
+/*о нашей компании*/
 
 .features-list {
 display: grid;
@@ -271,7 +283,7 @@ flex-wrap: wrap;
 	font-size: 16px;
 }
 
-/*<!--клиенты -->*/
+/*клиенты*/
 
 .client-block {
 	border-bottom: 2px solid #eeeeee;
@@ -328,14 +340,15 @@ flex-wrap: wrap;
 	width: 1440px;
 	height: 416px;
 	margin: auto;
+	position: relative;
 
 }
 
 .map-marker {
-	position: relative;
+	position: absolute;
 	z-index: 1;
-	left: 1057px;
-	bottom: -1555px;
+	left: 825px;
+	bottom: 140px;
 }
 
 /*контакты*/
@@ -343,12 +356,16 @@ flex-wrap: wrap;
 
 .contacts {
   position: absolute;
-  bottom: -1641;
-  left: 374;
+  bottom: 50px;
+  left: 143px;
   z-index: 2;
-  width: 320px;
-  padding: 47px 50px;
+  width: 270px;
   background-color: #ffffff;
+  padding-top: 50px;
+  padding-left: 49px;
+  padding-bottom: 50px;
+
+
 }
 
 .contacts-text {
@@ -494,6 +511,19 @@ display: grid;
 }
 
 
+.container {
+	display: flex;
+	justify-content: center;
+}
+
+
+
+
+
+
+
+
+
 /*all button */
 .button-red {
 	font-size: inherit;
@@ -596,18 +626,33 @@ display: grid;
 
 /*footer*/
 
+.footer-description {
+	margin-left: 170px;
+	margin-top: 72px;
+}
+
 .footer-text {
 	font-size: 36px;
 	color: var(--bigtext-color);
+	margin-bottom: -6px;
 	
 }
 
-.footer-icon:hover,
-.footer-icon:focus
+.footer-icon {
+	margin-top: -89px;
+	margin-left: -113px;
+	width: 270px;
+}
+
+
+
+.social-icon:hover,
+.social-icon:focus
 {
 border:none;	
 color: var(--basic-white);
 background-color: var(--social-network-icon);
+background-color: var(--button-aim-on);
 }
 .footer-content{
 width: auto;
@@ -760,7 +805,7 @@ justify-content: center;
   padding-bottom: 84px;
   padding-left: 100px;
   background-color: var(--social-network-icon);
-  
+  opacity: 0;
 }
 
 
