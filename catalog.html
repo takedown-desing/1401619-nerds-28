@@ -54,42 +54,42 @@
 							<fieldset>
 								<legend>СЕТКА:</legend>
 								<ul>
-									<li class="filter-option filter-checkbox">
+									<li class="filter-option filter-radio">
+										<input class="visually-hidden filter-input-radio filter-input" type="radio" id="adapt" name="setka" value="adapt" checked>
 										<label  for="adapt">Адаптивная</label>
-										<input class="visually-hidden filter-input-checkbox filter-input" type="radio" id="adapt" name="setka" value="adapt" checked>
 									</li>
-									<li class="filter-option filter-checkbox">
+									<li class="filter-option filter-radio">
+										<input class="visually-hidden filter-input-radio filter-input" type="radio" id="fixed" name="setka" value="fix">
 										<label  for="fixed">Фиксированная</label>
-										<input class="visually-hidden filter-input-checkbox filter-input" type="radio" id="fixed" name="setka" value="fix">
 									</li>
-									<li class="filter-option filter-checkbox">
+									<li class="filter-option filter-radio">
+										<input class="visually-hidden filter-input-radio filter-input" type="radio" id="tires" name="setka" value="tyres">
 										<label  for="tires">Резиновая</label>
-										<input class="visually-hidden filter-input-checkbox filter-input" type="radio" id="tires" name="setka" value="tyres">
 									</li>
 								</ul>
 							</fieldset>
 							<fieldset>
 								<legend>ОСОБЕННОСТИ:</legend>
 								<ul>
-									<li class="filter-option filter-radio">
+									<li class="filter-option filter-checkbox">
+										<input class="visually-hidden filter-input-checkbox filter-input" id="slide" type="checkbox" checked>
 										<label  for="slide">Слайдер</label>
-										<input class="visually-hidden filter-input-radio filter-input" id="slide" type="checkbox" checked>
 									</li>
-									<li class="filter-option filter-radio">
+									<li class="filter-option filter-checkbox">
+										<input class="visually-hidden filter-input-checkbox filter-input" id="block" type="checkbox">
 										<label  for="block">Блок преимуществ</label>
-										<input class="visually-hidden filter-input-radio filter-input" id="block" type="checkbox">
 									</li>
-									<li class="filter-option filter-radio">
+									<li class="filter-option filter-checkbox">
+										<input class="visually-hidden filter-input-checkbox filter-input" id="news" type="checkbox" checked>
 										<label  for="news">Новости</label>
-										<input class="visually-hidden filter-input-radio filter-input" id="news" type="checkbox" checked>
 									</li>
-									<li class="filter-option filter-radio">
+									<li class="filter-option filter-checkbox">
+										<input class="visually-hidden filter-input-checkbox filter-input" id="galary" type="checkbox">
 										<label  for="galary">Галерея</label>
-										<input class="visually-hidden filter-input-radio filter-input" id="galary" type="checkbox">
 									</li>
-									<li class="filter-option filter-radio">
+									<li class="filter-option filter-checkbox">
+										<input class="visually-hidden filter-input-checkbox filter-input" id="cart" type="checkbox">
 										<label  for="cart">Корзина</label>
-										<input class="visually-hidden filter-input-radio filter-input" id="cart" type="checkbox">
 									</li>
 								</ul>
 							</fieldset>
@@ -100,10 +100,10 @@
 				<!--шапка проектов -->
 				<section class="content-catalog">
 					<h2 class="visually-hidden">Проекты</h2>
-					<div class="sorting">
-						<form>
+					<div class="sort">
+						<form class="sorn-item">
 							<p>СОРТИРОВАТЬ:</p>
-							<ul>
+							<ul class="sort-button">
 								<li>ПО ЦЕНЕ</li>
 								<li>ПО ТИПУ</li>
 								<li>ПО НАЗВАНИЮ</li>
@@ -121,7 +121,7 @@
 					<!--проекты -->
 					<div>
 						<figure class="cart-tovar">
-							<img src="img/browser.svg" width="360" height="40" alt="browser">
+							<img class="catalog-browser" src="img/browser.svg" width="360" height="40" alt="browser">
 							<img src="img/sedona.jpg" width="360" height="576" alt="sedona">
 							<div class="catalog-info">
 						<h3 class="catalog-name">SEDONA</h3>	
@@ -133,12 +133,12 @@
 					<div>
 						
 						<figure class="cart-tovar">
-							<img src="img/browser.svg" width="360" height="40" alt="browser">
+							<img class="catalog-browser" src="img/browser.svg" width="360" height="40" alt="browser">
 							<img src="img/pink.jpg" width="360" height="576" alt="pink">
 							<div class="catalog-info">
 						<h3 class="catalog-name">PINK</h3>
-						<p class="catalog-description">Приложение</p>
-						<button class="button-red catalog-price" type = "button">100500 Р</button>
+						<p class="catalog-description">Продуктовый лендинг приложения для iOS и Android</p>
+						<button class="button-red catalog-price" type = "button">9 900 Р</button>
 					</div>
 						</figure>
 					</div>
@@ -149,8 +149,8 @@
 							<img src="img/borodinski.jpg" width="360" height="576" alt="borodinski">
 							<div class="catalog-info">
 						<h3 class="catalog-name">BORODINSKI</h3>
-						<p class="catalog-description">Барбершоп</p>
-						<button class="button-red catalog-price" type = "button">100500 Р</button>
+						<p class="catalog-description">Сайт салоны красоты. Для мужчин, да.</p>
+						<button class="button-red catalog-price" type = "button">9 900 Р</button>
 					</div>
 						</figure>
 					</div>
@@ -161,8 +161,8 @@
 							<img src="img/mishka.jpg" width="360" height="576" alt="mishka">
 						<div class="catalog-info">
 						<h3 class="catalog-name">MISHKA</h3>
-						<p class="catalog-description">Всякие милые штучки</p>
-						<button class="button-red catalog-price" type = "button">100500 Р</button>
+						<p class="catalog-description">Интернет-магазин вязаных игрушек</p>
+						<button class="button-red catalog-price" type = "button">9 900 Р</button>
 					    </div>
 						</figure>
 					</div>
@@ -173,9 +173,9 @@
 							<img src="img/browser.svg" width="360" height="40" alt="browser">
 							<img src="img/aplus.jpg" width="360" height="576" alt="aplus">
 							<div class="catalog-info">
-						<h3 class="catalog-name">A+</h3>
-						<p class="catalog-description">Тут про учёбу</p>
-						<button class="button-red catalog-price" type = "button">100500 Р</button>
+						<h3 class="catalog-name">A PLUS</h3>
+						<p class="catalog-description">Лендинг курсов повышения квалификации</p>
+						<button class="button-red catalog-price" type = "button">9 900 Р</button>
 					</div>
 						</figure>
 					</div>
@@ -187,8 +187,8 @@
 							<img src="img/kvast.jpg" width="360" height="576" alt="kvast">
 							<div class="catalog-info">
 						<h3 class="catalog-name">КВАСТ</h3>
-						<p class="catalog-description">Крафтовый квас</p>
-						<button class="button-red catalog-price" type = "button">100500 Р</button>
+						<p class="catalog-description">Промо-сайт производителя крафтового кваса</p>
+						<button class="button-red catalog-price" type = "button">9 900 Р</button>
 					</div>
 						</figure>
 					</div>

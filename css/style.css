@@ -510,21 +510,31 @@ display: grid;
     margin-right: -104px; 
 }
 
-.sorting {
-	display: flex;
-	justify-content: flex-start;
-	flex-wrap: wrap;
-	margin-top: -79px;
+.sort {
+	margin-top: 9px;
+	margin-left: 138px;
+	font-weight: 600;
 	grid-column-start: 1;
 	grid-column-end: 3;
 	grid-row-end: 1;
 }
 
-.sorting li {
-	position: relative;
-	margin-right: 42px;
+.sorn-item {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
 }
 
+.sort-button {
+	display: flex;
+	padding-left: 252px;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.sort-button li {
+	padding-left: 22px;
+}
 
 .container {
 	display: flex;
@@ -535,13 +545,16 @@ display: grid;
 	position: relative;
 }
 
+
+
+
 .catalog-info {
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
   left: 0;
   width: 245px;
   padding-top: 26px;
-  padding-right: 60px;
+  padding-right: 55px;
   padding-bottom: 43px;
   padding-left: 60px;
   font-size: 16px;
@@ -553,7 +566,7 @@ display: grid;
   transition-duration: 750ms;
 }
 
-.content-catalog:hover .catalog-info {
+.cart-tovar:hover .catalog-info {
   transform: scaleY(1);
 }
 
@@ -708,6 +721,9 @@ display: grid;
   width: 16px;
   height: 16px;
   border: 2px solid #000000;
+  background-image: url("..img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .filter-input-checkbox:checked + label::after {
@@ -717,9 +733,10 @@ display: grid;
   left: -38px;
   width: 12px;
   height: 12px;
-  background-image: url("..img/checkbox-on.svg");
+  background-image: url("..img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  
 }
 
 
@@ -732,6 +749,9 @@ display: grid;
   height: 16px;
   border: 2px solid #000000;
   border-radius: 50%;
+  background-image: url("..img/radio-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .filter-input-radio:checked + label::after {
@@ -743,6 +763,9 @@ display: grid;
   height: 8px;
   background-color: #000000;
   border-radius: 50%;
+  background-image: url("..img/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 
