@@ -31,10 +31,10 @@
 							<div class="range-filter">
 								<div class="range-controls">
 									<div class="scale">
-										<div class="bar" style="width: 30%; 	margin-left: 20%"></div>
+										<div class="bar" style="width: 62%; 	margin-left: 4%"></div>
 									</div>
-									<div class="toggle toggle-min" tabindex="0" style="left: 20%"></div>
-									<div class="toggle toggle-max" tabindex="0" style="left: 50%"></div>
+									<div class="toggle toggle-min" tabindex="0" style="left: 7%"></div>
+									<div class="toggle toggle-max" tabindex="0" style="left: 61%"></div>
 								</div>
 								<div class="price-controls">
 									<label class="min-price">
@@ -47,7 +47,7 @@
 							</div>
 						</fieldset>
 					</form>
-					<!--фильтры -->
+					<!--фильтры с переключателем -->
 					<section class="filter-section" >
 						<h2 class="visually-hidden">Сетка фильтра</h2>
 						<form class="filter" method="get" action="https://echo.htmlacademy.ru">
@@ -108,18 +108,14 @@
 								<li>ПО ТИПУ</li>
 								<li>ПО НАЗВАНИЮ</li>
 							</ul>
-							<figure>
-								<button>
-								<img src="img/icon-down-dir.svg" alt="сортировка по убыванию">
-								</button>
-								<button>
-								<img src="img/icon-up-dir.svg" alt="сортировка по возрастанию">
-								</button>
-							</figure>
+							<div class="sort-method">
+								<a class="sorting-methods-button sorting-methods-button--decrease active" aria-label="По убыванию"></a>
+              					<a class="sorting-methods-button sorting-methods-button--gain" href="#" aria-label="По возрастанию"></a>
+							</div>
 						</form>
 					</div>
 					<!--проекты -->
-					<div>
+					<div class="project-sedona">
 						<figure class="cart-tovar">
 							<img class="catalog-browser" src="img/browser.svg" width="360" height="40" alt="browser">
 							<img src="img/sedona.jpg" width="360" height="576" alt="sedona">
@@ -130,8 +126,7 @@
 						</div>
 						</figure>
 						</div>
-					<div>
-						
+					<div class="project-pink">
 						<figure class="cart-tovar">
 							<img class="catalog-browser" src="img/browser.svg" width="360" height="40" alt="browser">
 							<img src="img/pink.jpg" width="360" height="576" alt="pink">
@@ -142,8 +137,7 @@
 					</div>
 						</figure>
 					</div>
-					<div>
-						
+					<div class="project-borodinski">
 						<figure class="cart-tovar">
 							<img src="img/browser.svg" width="360" height="40" alt="browser">
 							<img src="img/borodinski.jpg" width="360" height="576" alt="borodinski">
@@ -154,8 +148,7 @@
 					</div>
 						</figure>
 					</div>
-					<div>
-						
+					<div class="project-mishka">
 						<figure class="cart-tovar">
 							<img src="img/browser.svg" width="360" height="40" alt="browser">
 							<img src="img/mishka.jpg" width="360" height="576" alt="mishka">
@@ -166,10 +159,8 @@
 					    </div>
 						</figure>
 					</div>
-					<div>
-						
+					<div class="project-aplus">
 						<figure class="cart-tovar">
-							
 							<img src="img/browser.svg" width="360" height="40" alt="browser">
 							<img src="img/aplus.jpg" width="360" height="576" alt="aplus">
 							<div class="catalog-info">
@@ -179,10 +170,8 @@
 					</div>
 						</figure>
 					</div>
-					<div>
-						
+					<div class="project-kvast">
 						<figure class="cart-tovar">
-							
 							<img src="img/browser.svg" width="360" height="40" alt="browser">
 							<img src="img/kvast.jpg" width="360" height="576" alt="kvast">
 							<div class="catalog-info">
@@ -224,26 +213,25 @@
 				</div>
 			</section>
 			<!--всплывающее окно -->
-			<section class="popup">
-				<h2 class="popup__title">Напишите нам</h2>
-				<button class="popup__close-btn" type="button" aria-label="Закрыть"></button>
-				<form class="popup__form" action="https://echo.htmlacademy.ru" method="post">
-					
-					<p class="popup__form-group">
-						<label class="popup__form-label" for="fio">Ваше имя:</label>
-						<input type="text" name="username" id="fio" placeholder="Имя Фамилия">
-					</p>
-					<p class="popup__form-group">
-						<label class="popup__form-label" for="yuoremail">Ваш e-mail:</label>
-						<input id="yuoremail" type="email" name="email" placeholder="email@example.com">
-					</p>
-					<p class="popup__form-group popup__form-group--wide">
-						<label class="popup__form-label" for="textletter">Текст письма</label>
-						<textarea id="textletter" rows="5" placeholder="В свободной форме"></textarea>
-					</p>
-					<button class="popup__form-btn btn btn--red" type="submit">ОТПРАВИТЬ</button>
-				</form>
-			</section>
+	<section class="popup popup-show">
+		<h2 class="popup-title">Напишите нам</h2>
+		<button class="popup-close" type="button" aria-label="Закрыть"></button>
+		<form class="popup-form" action="https://echo.htmlacademy.ru" method="post">
+			<p class="popup-group">
+				<label class="popup-label" for="fio">Ваше имя:</label>
+				<input type="text" name="username" id="fio" placeholder="Имя Фамилия">
+			</p>
+			<p class="popup-group">
+				<label class="popup-label" for="yuoremail">Ваш e-mail:</label>
+				<input id="yuoremail" type="email" name="email" placeholder="email@example.com">
+			</p>
+			<p class="popup-group popup-wide">
+				<label class="popup-label" for="textletter">Текст письма</label>
+				<textarea id="textletter" name="message" rows="5" placeholder="В свободной форме"></textarea>
+			</p>
+			<button class="popup-button button-red" type="submit">ОТПРАВИТЬ</button>
+		</form>
+	</section>
 		</main>
 		<!--футер -->
 		<footer class="footer-content">
@@ -262,5 +250,6 @@
 				</div>
 			</section>
 		</footer>
+		<script src="popup.js"></script>
 	</body>
 </html>
