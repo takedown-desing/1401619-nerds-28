@@ -115,12 +115,18 @@ list-style: none;
 	margin-left: 255px;
 }
 
-.login-icon::before { /* не появились иконка */
+.login-icon  {
+	position: relative;
+}
+
+.login-icon::before {
 content: "";	
   width: 15px;
   height: 15px;
   background-image: url("../img/cart-icon.svg");
   background-repeat: no-repeat;
+  position: absolute;
+  left:-40px;
   
 }
 .visually-hidden {
@@ -180,13 +186,30 @@ grid-template-rows: 155px 155px 155px 155px;
 
 }
 
+.features-column::before{
+
+	content: "";
+	position: absolute;
+	width: 1158px;
+	height: 2px;
+	bottom: 0;
+	left: 50%;
+	background-color: #eeeeee;
+	margin-left: -400px;
+	margin-bottom: 230px;
+}
+
+
 .features-column{
 
 	grid-row-start:2;
 	grid-row-end: 2; 
 	grid-column-start:2;
 	grid-column-end: 2;
+	position: relative;
 }
+
+
 
 .company-description {
 	margin-top: 25px;
@@ -286,8 +309,32 @@ flex-wrap: wrap;
 /*клиенты*/
 
 .client-block {
-	border-bottom: 2px solid #eeeeee;
+	position: relative;
 	margin-bottom: 60px;
+}
+.client-block::before {
+	content: "";
+	position: absolute;
+	width: 1158px;
+	height: 2px;
+	bottom: 0;
+	left: 50%;
+	background-color: #eeeeee;
+	margin-left: -575px;
+	margin-bottom: 200px;
+	
+}
+.client-block::after {
+	content: "";
+	position: absolute;
+	width: 1158px;
+	height: 2px;
+	bottom: 0;
+	left: 50%;
+	background-color: #eeeeee;
+	margin-left: -579px;
+	margin-bottom: 18px;
+	
 }
 
 .client { 
@@ -425,8 +472,9 @@ flex-wrap: wrap;
 {
 display: flex;
 background: var(--basic-header);
-width: 1200px;
+width: 100%;
 margin: 0 auto;
+margin-bottom: 63px;
 }
 
 .banner-content {
@@ -435,6 +483,12 @@ display: flex;
 flex-direction: column;
 padding: 30px;
 margin-top: 163px;
+}
+
+.banner-block {
+	width: 1200px;
+	margin: 0 auto;
+	margin-bottom: -63px;
 }
 .bannerh3 {
 	font-size: 55px;
@@ -727,10 +781,10 @@ margin-left: 139px;
   user-select: none;
 }
 
-.filter-input-checkbox:hover + label,
+/*.filter-input-checkbox:hover + label,
 .filter-input-checkbox:focus + label {
   color: var(--button-push);
-}
+}*/
 
 .filter-input-checkbox + label::before {
   content: "";
@@ -745,7 +799,7 @@ margin-left: 139px;
   background-position: 0 0;
 }
 
-.filter-input-checkbox:checked + label::after {
+/*.filter-input-checkbox:checked + label::after {
   content: "";
   position: absolute;
   top: 4px;
@@ -756,7 +810,7 @@ margin-left: 139px;
   background-repeat: no-repeat;
   background-position: 0 0;
   
-}
+}*/
 
 
 .filter-input-radio + label::before {
@@ -889,41 +943,66 @@ margin-left: 139px;
 
 /*футер*/
 
-.footer-description {
-	margin-left: 170px;
-	margin-top: 72px;
+.footer-content{
+width: 1200px;
+margin: 0 auto;
+padding: 0 20px;
+display: flex;
+align-items: self-start;
+padding-top: 45px;
+}
+.footer-icon {
+	min-width: 270px;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 26px;
+	margin-bottom: 0px;
+	margin-right: 130px;
+	padding-left: 23px;
+
 }
 
+.social-item:not(:last-child) {
+margin-right: 13px;
+}
+
+.footer-description {
+	margin-top: -3px;
+	
+}
 .footer-text {
 	font-size: 36px;
 	color: var(--bigtext-color);
 	margin-bottom: -6px;
+	line-height: 1;
+	font-weight: 700;
 	
 }
 
-.footer-icon {
-	margin-top: -89px;
-	margin-left: -113px;
-	width: 270px;
+.social-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80px;
+	height: 80px;
+	background: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;
+	border-radius: 50%;
+}
+
+.social-icon:hover {
+  background: linear-gradient(0deg, #E74246, #E74246), #FFFFFF;
+}
+
+.social-icon:active {
+  background: linear-gradient(0deg, #D7373B, #D7373B), #FFFFFF;
+  
+}
+
+.social-icon:active img {
+  opacity: 0.3;
 }
 
 
-
-.social-icon:hover,
-.social-icon:focus
-{
-border:none;	
-color: var(--basic-white);
-background-color: var(--social-network-icon);
-background-color: var(--button-aim-on);
-}
-.footer-content{
-width: auto;
-margin: 0 auto;
-display: flex;
-align-items: center;
-justify-content: center;
-}
 
 /*фильтр с ползунком*/
 
@@ -1025,15 +1104,13 @@ justify-content: center;
   padding-bottom: 84px;
   padding-left: 100px;
   background-color: var(--social-network-icon);
-  opacity: 0;
+  opacity: 1;
   
 }
 
 .popup-show {
 display: block;
-animation-name: show-form;
-animation-duration: 750ms; 
-animation-fill-mode: forwards;
+animation: bounce 0.6s;
 }
 .popup-hide {
    animation-name: hide-form;
@@ -1073,8 +1150,7 @@ animation-fill-mode: forwards;
   opacity: 0.3;
 }
 
-.popup-close::before,
-.popup-close::after {
+.popup-close::before {
   content: "";
   position: absolute;
   right: 0;

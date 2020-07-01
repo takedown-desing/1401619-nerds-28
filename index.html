@@ -24,29 +24,31 @@
 				<h1 class="visually-hidden">Нёрдс-лучшая дизайн студия</h1>
 				<!--Баннеры -->
 				<section class="banner-position">
-					<div class="banner-content">
-						<h3 class="bannerh3">Долго, дорого,<br> скрупулезно.</h3>
-						<p class="banner-text" >Математически выверенный дизайн<br> для вашего сайта или мобильного приложения</p>
-						<button type = "button" class="button-red button-banner">УЗНАТЬ БОЛЬШЕ</button>
-						<figure class="banner-image">
-							<img src="img/generalbanner.png" width="760" height="431" alt="баннер телефонами"> <!--это баннер1 -->
-							<img class="slider-scroll" width="88" height="18" src="img/group7.svg">
-						</figure>
-					</div>
-					<div class="visually-hidden">
-						<h3>Любим математику как никто другой</h3>
-						<p>Никакого креатива,только математические формулы<br> для расчета идеальных пропорций</p>
-						<figure>
-							<img src="img/generalbanner1.png" width="760" height="431" alt="баннер с мониторами"> <!--это баннер2 -->
-						</figure>
-					</div>
-					<div class="visually-hidden">
-						<h3>Только ночь,<br> только хардкор</h3>
-						<p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
-						<figure>
-							<img src="img/generalbanner2.png" width="760" height="431" alt="баннер с планшетом и телефоном"> <!--это баннер3 -->
-							<img src="img/group6.svg" width="88" height="18" alt="ползунок прокрутка">
-						</figure>
+					<div class="banner-block">
+						<div class="banner-content">
+							<h3 class="bannerh3">Долго, дорого,<br> скрупулезно.</h3>
+							<p class="banner-text" >Математически выверенный дизайн<br> для вашего сайта или мобильного приложения</p>
+							<button type = "button" class="button-red button-banner">УЗНАТЬ БОЛЬШЕ</button>
+							<figure class="banner-image">
+								<img src="img/generalbanner.png" width="760" height="431" alt="баннер телефонами"> <!--это баннер1 -->
+								<img class="slider-scroll" width="88" height="18" src="img/group7.svg">
+							</figure>
+						</div>
+						<div class="visually-hidden">
+							<h3>Любим математику как никто другой</h3>
+							<p>Никакого креатива,только математические формулы<br> для расчета идеальных пропорций</p>
+							<figure>
+								<img src="img/generalbanner1.png" width="760" height="431" alt="баннер с мониторами"> <!--это баннер2 -->
+							</figure>
+						</div>
+						<div class="visually-hidden">
+							<h3>Только ночь,<br> только хардкор</h3>
+							<p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+							<figure>
+								<img src="img/generalbanner2.png" width="760" height="431" alt="баннер с планшетом и телефоном"> <!--это баннер3 -->
+								<img src="img/group6.svg" width="88" height="18" alt="ползунок прокрутка">
+							</figure>
+						</div>
 					</div>
 				</section>
 				<!--наши работы -->
@@ -178,21 +180,29 @@
 </main>
 <!--футер -->
 <footer class="footer-content">
-	<section>
-		<div class="footer-description">
-			<h3 class="visually-hidden">Наши предложения</h3>
-			<p  class="footer-text">Давайте дружить, это выгодно!</p>
-			<p>Скидка 10% для друзей из социальных сетей.</p>
-		</div>
-		<div class="footer-icon">
-			<figure class="footer-icon">
-				<a class="social-icon" href="https://vk.com/"><img src="img/vkicon.svg" width="81" height="81" alt="vkicon" ></a>
-				<a class="social-icon" href="https://www.facebook.com/"><img src="img/fbicon.svg" width="81" height="81" alt="fbicon"></a>
-				<a class="social-icon" href="https://www.instagram.com/"><img src="img/instaicon.svg" width="81" height="81" alt="instaicon"></a>
-			</figure>
-		</div>
-	</section>
+	<ul class="footer-icon">
+		<li class="social-item">
+			<a class="social-icon" href="https://vk.com/">
+				<img src="img/vkicon.svg" width="26" height="15" alt="vkicon" >
+			</a>
+		</li>
+		<li class="social-item">
+			<a class="social-icon" href="https://www.facebook.com/">
+				<img src="img/fbicon.svg" width="12" height="22" alt="fbicon">
+			</a>
+		</li>
+		<li class="social-item">
+			<a class="social-icon" href="https://www.instagram.com/">
+				<img src="img/instaicon.svg" width="21" height="21" alt="instaicon">
+			</a>
+		</li>
+	</ul>
+	<div class="footer-description">
+		<h3 class="visually-hidden">Наши предложения</h3>
+		<p  class="footer-text">Давайте дружить, это выгодно!</p>
+		<p>Скидка 10% для друзей из социальных сетей.</p>
+	</div>
 </footer>
-<script src="popup.js"></script>
+<script src="../js/popup.js"></script>
 </body>
 </html>

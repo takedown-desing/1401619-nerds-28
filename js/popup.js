@@ -1,43 +1,30 @@
-(function (){
-  var ESC_KEYCODE = 27;
-  var ENTER_KEYCODE = 13;
+var openform = document.querySelector(".contacts-button");
+var popupshow = document.querySelector(".popup-show");
+var closeform = popupshow.querySelector(".popup-button");
+var popupform = popupshow.querySelector(".popup-form");
+var loginfio = popupshow.querySelector(".popup-label"); 
 
-  var openPopupButton = document.querySelector('.contacts-button');
-  var popup = document.querySelector('.popup');
-  var closePopupButton = popup.querySelector('.popup-close');
-  var form = popup.querySelector('.popup-form');
-  var formFields = form.querySelectorAll('.popup-group input');
-  var name = form.querySelector('.popup-group #username');
-  var email = form.querySelector('.popup-group #email');
-  var feedback = form.querySelector('.popup-group #message');
-  var submitFormButton = form.querySelector('.popup-button');
 
-  var isStorageSupport = true;
-  var storageName = '';
-  var storageEmail = '';
-  var storageFeedback = '';
+openform.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popupshow.classList.add("popup-show");
+  loginfio.focus();
+});
 
-  var onPopupEscPress = function (evt) {
-    if (evt.target.tagName !== 'INPUT' && evt.target.tagName !== 'TEXTAREA') {
-      if (evt.keyCode === ESC_KEYCODE) {
-        evt.preventDefault();
+closeform.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popupshow.classList.remove("popup-show");
+});
 
-        closePopup();
-        }
-      }
-  };
-   var openPopup = function () {
-    popup.classList.remove('popup-hide');
-    popup.classList.add('popup-show');
+popupform.addEventListener("submit", function (evt) {
+    evt.preventDefault();
+});
 
-    if (storageName && storageEmail && storageFeedback) {
-      name.value = storageName;
-      email.value = storageEmail;
-      feedback.value = storageFeedback;
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    if (popupshow.classList.contains("popup-show")) {
+      evt.preventDefault();
+      popupshow.classList.remove("popup-show");
     }
-
-    name.focus();
-
-    document.addEventListener('keydown', onPopupEscPress);
   }
-})();
+});
