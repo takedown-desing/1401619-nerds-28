@@ -1,6 +1,6 @@
 var openform = document.querySelector(".contacts-button");
-var popupshow = document.querySelector(".popup-show");
-var closeform = popupshow.querySelector(".popup-button");
+var popupshow = document.querySelector(".popup");
+var closeform = popupshow.querySelector(".popup-close");
 var popupform = popupshow.querySelector(".popup-form");
 var loginfio = popupshow.querySelector(".popup-label"); 
 

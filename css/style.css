@@ -794,23 +794,23 @@ margin-left: 139px;
   width: 16px;
   height: 16px;
   border: 2px solid #000000;
-  background-image: url("..img/checkbox-on.svg");
+  background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
-/*.filter-input-checkbox:checked + label::after {
+.filter-input-checkbox:checked + label::after {
   content: "";
   position: absolute;
   top: 4px;
   left: -38px;
   width: 12px;
   height: 12px;
-  background-image: url("..img/checkbox-off.svg");
+  background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   
-}*/
+}
 
 
 .filter-input-radio + label::before {
@@ -822,7 +822,7 @@ margin-left: 139px;
   height: 16px;
   border: 2px solid #000000;
   border-radius: 50%;
-  background-image: url("..img/radio-on.svg");
+  background-image: url("../img/radio-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -836,7 +836,7 @@ margin-left: 139px;
   height: 8px;
   background-color: #000000;
   border-radius: 50%;
-  background-image: url("..img/radio-off.svg");
+  background-image: url("../img/radio-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -1094,6 +1094,7 @@ margin-right: 13px;
 /*всплывающее окно на главной странице(которое большое, поверх карты)
 */ 
 .popup {
+  display: none;
   position: fixed;
   bottom: 24px;
   width: 761px;
