@@ -17,6 +17,7 @@
   --bigtext-color:#000000;
   --button-catalog-aim-on: #DFDFDF;
   --button-push: #D5D5D5;
+  --radio-chekbox-botton: #4D4D4D;
   
 }
 
@@ -741,7 +742,7 @@ margin-left: 139px;
 }
 
 .filter-section {
-	padding-top: 55px;
+  padding-top: 55px;
 }
 
 .filter fieldset {
@@ -781,20 +782,23 @@ margin-left: 139px;
   user-select: none;
 }
 
-/*.filter-input-checkbox:hover + label,
-.filter-input-checkbox:focus + label {
-  color: var(--button-push);
-}*/
+.filter-input-checkbox:hover + label {
+  opacity: 1;
+}
+
+.filter-input-checkbox:active + label {
+  opacity: 0.1;
+}
 
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
   left: -42px;
   top: 0;
-  width: 16px;
-  height: 16px;
-  border: 2px solid #000000;
-  background-image: url("../img/checkbox-on.svg");
+  width: 26px;
+  height: 23px;
+  opacity: 0.4;
+  background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -802,11 +806,12 @@ margin-left: 139px;
 .filter-input-checkbox:checked + label::after {
   content: "";
   position: absolute;
-  top: 4px;
-  left: -38px;
-  width: 12px;
-  height: 12px;
-  background-image: url("../img/checkbox-off.svg");
+  top: 0px;
+  left: -42px;
+  width: 26px;
+  height: 23px;
+  /*background: var(--radio-chekbox-botton);*/
+  background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   
@@ -818,11 +823,11 @@ margin-left: 139px;
   position: absolute;
   left: -42px;
   top: -1px;
-  width: 16px;
-  height: 16px;
-  border: 2px solid #000000;
+  width: 25px;
+  height: 25px;
+  opacity: 0.4;
   border-radius: 50%;
-  background-image: url("../img/radio-on.svg");
+  background-image: url("../img/radio-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -830,13 +835,13 @@ margin-left: 139px;
 .filter-input-radio:checked + label::after {
   content: "";
   position: absolute;
-  top: 5px;
-  left: -36px;
-  width: 8px;
-  height: 8px;
-  background-color: #000000;
+  top: -1px;
+  left: -42px;
+  width: 25px;
+  height: 25px;
+  /*background: var(--radio-chekbox-botton);*/
   border-radius: 50%;
-  background-image: url("../img/radio-off.svg");
+  background-image: url("../img/radio-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
