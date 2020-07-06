@@ -26,10 +26,10 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/roboto-v20-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+  src: url('/fonts/roboto-v20-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
   src: local('Roboto'), local('Roboto-Regular'),
-       url('../fonts/roboto-v20-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/roboto-v20-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+       url('/fonts/roboto-v20-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/roboto-v20-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
        
 }
 /* roboto-700 - latin_cyrillic */
@@ -37,10 +37,10 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/roboto-v20-latin_cyrillic-700.eot'); /* IE9 Compat Modes */
+  src: url('/fonts/roboto-v20-latin_cyrillic-700.eot'); /* IE9 Compat Modes */
   src: local('Roboto Bold'), local('Roboto-Bold'),
-       url('../fonts/roboto-v20-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/roboto-v20-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
+       url('/fonts/roboto-v20-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/roboto-v20-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
        
 }
 * {
@@ -72,6 +72,10 @@ ul{
 list-style: none;
 }
 
+iframe {
+	width: 100%;
+	border: 0;
+}
 
 /* хедер */
 .main-header {
@@ -751,7 +755,6 @@ margin-left: 139px;
 .pagination-item {
   display: inline-block;
   margin-right: 7px;
-
   vertical-align: top;
 }
 
@@ -759,13 +762,12 @@ margin-left: 139px;
   display: inline-block;
   width: 50px;
   padding: 16px 0;
-
   font-size: 16px;
   line-height: 1.125;
   text-align: center;
   color: var(--bigtext-color);
   text-transform: uppercase;
-
+  vertical-align: top;
   background-color: var(--basic-header);
   border-radius: 2px;
 }
@@ -833,6 +835,10 @@ margin-left: 139px;
   user-select: none;
 }
 
+
+.filter-input-checkbox:focus + label {
+  opacity: 1;
+}
 .filter-input-checkbox:hover + label {
   opacity: 1;
 }
@@ -852,6 +858,7 @@ margin-left: 139px;
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  
 }
 
 .filter-input-checkbox:checked + label::after {
@@ -868,6 +875,17 @@ margin-left: 139px;
   
 }
 
+
+.filter-input-radio:focus + label {
+  opacity: 1;
+}
+.filter-input-radio:hover + label {
+  opacity: 1;
+}
+
+.filter-input-radio:active + label {
+  opacity: 0.1;
+}
 
 .filter-input-radio + label::before {
   content: "";
@@ -895,6 +913,7 @@ margin-left: 139px;
   background-image: url("../img/radio-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  
 }
 
 /*все кнопки */
@@ -910,10 +929,11 @@ margin-left: 139px;
 .button-red:hover,
 .button-red:focus {
 	background-color: var(--button-aim-on);
+	
 }
-
 .button-red:active {
 	background-color: var(--button-push);
+
 }
 
 .features-button-red {
