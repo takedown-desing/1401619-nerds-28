@@ -66,6 +66,11 @@ iframe {
 width: 100%;
 border:none;
 }
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 /* хедер */
 .main-header {
 background: var(--basic-header);
