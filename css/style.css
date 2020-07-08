@@ -137,7 +137,7 @@ margin: -1px;
 .h1 {
 padding-bottom: 52px;
 margin-top: 20px;
-margin-left: -35px;
+margin-left: -19px;
 font-weight: 500;
 font-size: 55px;
 line-height: 3;
@@ -150,11 +150,10 @@ text-align: left;
 color: var(--usualtext-color);
 display: flex;
 flex-direction: row;
-justify-content: center;
+justify-content: flex-start;
 width: 1200px;
 margin: 0;
 flex-wrap: wrap;
-margin-left: 373px;
 margin-bottom: 14px;
 }
 .picture {
@@ -164,6 +163,10 @@ margin: 0;
 margin-right: 100px;
 margin-top: 17px;
 }
+.features-block-yellow {
+margin-top: 17px;	
+}
+
 .features-text {
 margin-top: -6px;
 margin-left: 0px;
@@ -173,10 +176,13 @@ line-height: 24px;
 /*о нашей компании*/
 .features-list {
 display: grid;
-grid-template-columns: 370px 800px;
+grid-template-columns: 800px;
 grid-template-rows: 155px 155px 155px 155px;
+width: 1160px;
+margin:0 auto;
+padding: 0 20px;
 }
-.features-column::before{
+/*.features-column::before{
 content: "";
 position: absolute;
 width: 1158px;
@@ -186,18 +192,18 @@ left: 50%;
 background-color: #eeeeee;
 margin-left: -400px;
 margin-bottom: 228px;
-}
+}*/
 .features-column{
 grid-row-start:2;
 grid-row-end: 2;
-grid-column-start:2;
+grid-column-start:1;
 grid-column-end: 2;
-position: relative;
+/*position: relative;*/
 }
 .company-description {
-line-height: 145%;
+line-height: 24px;
 margin-bottom: 0px;
-margin-left: 2px;
+margin-left: 0px;
 }
 .features-about {
 display: flex;
@@ -210,17 +216,17 @@ color: var(--bigtext-color);
 font-weight: 500;
 font-style: normal;
 margin-top: 0px;
-margin-bottom: 32px;
+margin-bottom: 34px;
 margin-left: 0px;
-line-height: 103%;
+line-height: 45px;
 }
 .big-subtitle {
-padding-top: 29px;
-margin-left: 2px;
+padding-top: 28px;
+margin-left: 1px;
 font-weight: 600;
 }
 .description-list {
-margin: 4px;
+margin: 1px;
 padding-left: 0;
 padding-top: 11px;
 }
@@ -238,7 +244,8 @@ vertical-align: top;
 background-color: #fb565a;
 }
 .mini-logo {
-margin-left: 4px;
+margin-left: 0px;
+margin-right: 0px;
 margin-top: -35px;
 margin-bottom: 0px;
 }
@@ -316,22 +323,26 @@ margin-bottom: 18px;
 .client {
 text-align: center;
 height: 189px;
-margin: auto;
 display: flex;
 flex-wrap: wrap;
 justify-content: flex-start;
 align-content: center;
 min-height: 180px;
+padding-left: 0px;
+width: 1160px;
+margin: 0 auto;
+padding: 0 20px;
 
 }
 .client-about {
 position: relative;
-left: 320px;
+left: 33px;
+top: 5px;
 }
-.client-about:nth-child(n+1) {
-width: 296px;
-}
-.client-about:not(:nth-child(odd))::after {
+/*.client-about:nth-child(n+1) {
+width: 199px;
+}*/
+.client-about:not(:nth-child(4n))::after {
 content: "";
 position: absolute;
 right: -1px;
@@ -342,12 +353,15 @@ background-color: #eeeeee;
 }
 .client-about:nth-child(2) {
 top:-14px;
+left: 128px;
 }
 .client-about:nth-child(3) {
-top:4px;
+top:8px;
+left: 232px;
 }
 .client-about:last-child {
 top:-7px;
+left: 350px;
 }
 .client-link {
 opacity: 0.3;
@@ -447,16 +461,17 @@ padding: 30px;
 margin-top: 163px;
 }
 .banner-block {
-width: 1200px;
+width: 1160px;
 margin: 0 auto;
-margin-bottom: -63px;
+padding: 0 20px;
+margin-bottom: -40px;
 }
 .bannerh3 {
 font-size: 55px;
 margin-top: -118px;
 text-transform: none;
 line-height: 55px;
-margin-left: -10px;
+margin-left: -30px;
 font-weight: 500;
 margin-bottom: 20px;
 }
@@ -464,17 +479,18 @@ margin-bottom: 20px;
 text-transform: none;
 line-height: 24px;
 margin-top: 6px;
-margin-left: -10px;
+margin-left: -30px;
 margin-bottom: 55px;
 }
 .banner-image {
-margin: 0px;
-margin-top: -353px;
-margin-left: 380px;
+margin-top: -342px;
+margin-right: 0px;
+margin-left: 357px;
+margin-bottom: -25px;
 }
 .button-banner {
 margin-top: -17px;
-margin-left: -9px;
+margin-left: -29px;
 border-radius: 3px;
 padding: 16px 54px;
 }
@@ -508,12 +524,26 @@ grid-row-end: 1;
 display: flex;
 justify-content: flex-start;
 flex-wrap: wrap;
+margin-left: 1px;
+margin-top: -9px;
+}
+.sorn-item-title {
+font-size: 18px;
+font-weight: bold;
+line-height: 30px;	
 }
 .sort-button {
 display: flex;
-padding-left: 252px;
+margin-left: 206px;
 font-weight: 500;
 font-size: 14px;
+margin-top: 26px;
+}
+.sort-button li:nth-child(2) {
+padding-left: 3px;	
+}
+.sort-button li:nth-child(3) {
+padding-left: 5px;	
 }
 .sort-button a {
 padding-left: 22px;
@@ -529,8 +559,8 @@ opacity: 1;
 color: var(--bigtext-color);
 }
 .sort-method{
-margin-left: 44px;
-margin-top: 13px;
+margin-left: 46px;
+margin-top: 22px;
 }
 .sorting-methods-button {
 display: inline-block;
@@ -665,7 +695,7 @@ margin-top: 20px;
 }
 .filter-section {
 padding-top: 56px;
-margin-left: -4px;
+margin-left: 0px;
 }
 .filter fieldset {
 padding: 0;
@@ -677,7 +707,7 @@ border: none;
 margin-bottom: 26px;
 }
 .filter legend {
-margin-bottom: 22px;
+margin-bottom: 20px;
 font-size: 18px;
 line-height: 25px;
 font-weight: 600;
@@ -687,6 +717,7 @@ padding: 0;
 margin: 0;
 list-style: none;
 line-height: 18px;
+margin-left: -4px;
 }
 .filter-option {
 margin-bottom: 22px;
@@ -839,8 +870,8 @@ background-color: var(--basic-header);
 border:none;
 width: 260px;
 height: 50px;
-margin-left: 2px;
-margin-top: -3px;
+margin-left: -2px;
+margin-top: -1px;
 border-radius: 3px;
 }
 .button-filter:hover,
@@ -912,7 +943,7 @@ border: none;
 }
 .range-filter {
 width: 260px;
-margin-top: 49px;
+margin-top: 51px;
 }
 .filter-item legend {
 font-size: 18px;
@@ -978,6 +1009,12 @@ border-radius: 5px;
 background: #f1f1f1;
 font-family: inherit;
 font-size: inherit;
+}
+.max-price {
+
+}
+.min-price {
+
 }
 /*всплывающее окно на главной странице(которое большое, поверх карты)
 */
