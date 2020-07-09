@@ -545,6 +545,9 @@ padding-left: 3px;
 .sort-button li:nth-child(3) {
 padding-left: 5px;	
 }
+.sort-button-link.active {
+opacity:1;
+}
 .sort-button a {
 padding-left: 22px;
 opacity: 0.3;
